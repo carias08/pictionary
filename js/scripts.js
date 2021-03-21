@@ -8,3 +8,19 @@ const createPixels = () => {
     }
 };
 createPixels();
+
+let pixels = document.getElementsByClassName("small-divs");
+
+const draw = () => {
+    for(let i = 0; i < pixels.length; i++){
+        pixels[i].addEventListener("mouseover", function(evt){
+            if (evt.buttons === 1){
+                return pixels[i].style.backgroundColor = "black"
+            } else {
+                return evt.stopPropagation()
+            }
+        })
+    }
+}
+
+container.onmousedown = draw;
