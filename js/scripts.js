@@ -24,3 +24,13 @@ const draw = () => {
 }
 
 container.onmousedown = draw;
+
+// clear button 
+
+const clear = document.getElementById("clear");
+
+clear.addEventListener('click', function(){
+    for (let i = 0; i < pixels.length; i++){
+        pixels[i].style.backgroundColor = "transparent"
+    }
+})
