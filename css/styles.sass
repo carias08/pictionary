@@ -1,15 +1,54 @@
+$colors: pink, red, tomato, orange, yellow, MediumSeaGreen, DodgerBlue, Violet, black, white
+
+* 
+    margin: 0 auto
+    text-align: center
+    box-sizing: border-box
+    font-family: 'Titillium Web', sans-serif
+
+h1 
+    margin: 15px 0 5px
+
 #container 
     margin: 0 auto
-    width: 400px
-    height: 300px
-    border: 1px dotted black
+    width: 700px
+    height: 500px
+    border: 1px solid #6b6b6b
     display: flex
     flex-wrap: wrap
     over-flow: hidden
-
+    border-radius: 2px
+    margin-bottom: 15px
 
 .small-divs 
     width: 5px
     height: 5px
     background-color: transparent
 
+#color-container 
+    margin: 0 auto
+    width: 400px
+    border: 1px solid #6b6b6b
+    display: flex
+    margin-top: 5px
+    border-radius: 2px
+
+@for $i from 1 through length($colors)
+    $color:  nth($colors, $i)
+    .colors-#{$i}
+        background-color: #{$color}
+        height: 40px 
+        width: 40px
+
+#clear
+    border: none
+    background-color: gray
+    color: white
+    width: 70px
+    height: 30px
+    margin-top: 5px
+    border-radius: 50px
+
+#clear:hover 
+    background-color: #6b6b6b
+    color: white

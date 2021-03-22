@@ -1,17 +1,114 @@
+* {
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1 {
+  margin: 15px 0 5px;
+}
+
 #container {
   margin: 0 auto;
-  width: 400px;
-  height: 300px;
-  border: 1px dotted black;
+  width: 700px;
+  height: 500px;
+  border: 1px solid #6b6b6b;
   display: flex;
   flex-wrap: wrap;
   over-flow: hidden;
+  border-radius: 2px;
+  margin-bottom: 15px;
 }
 
 .small-divs {
   width: 5px;
   height: 5px;
   background-color: transparent;
+}
+
+#color-container {
+  margin: 0 auto;
+  width: 400px;
+  border: 1px solid #6b6b6b;
+  display: flex;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.colors-1 {
+  background-color: pink;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-2 {
+  background-color: red;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-3 {
+  background-color: tomato;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-4 {
+  background-color: orange;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-5 {
+  background-color: yellow;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-6 {
+  background-color: MediumSeaGreen;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-7 {
+  background-color: DodgerBlue;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-8 {
+  background-color: Violet;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-9 {
+  background-color: black;
+  height: 40px;
+  width: 40px;
+}
+
+.colors-10 {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+}
+
+#clear {
+  border: none;
+  background-color: gray;
+  color: white;
+  width: 70px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 50px;
+}
+
+#clear:hover {
+  background-color: #6b6b6b;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
