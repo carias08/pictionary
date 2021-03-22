@@ -7,7 +7,16 @@ $colors: pink, red, tomato, orange, yellow, MediumSeaGreen, DodgerBlue, Violet, 
     font-family: 'Titillium Web', sans-serif
 
 h1 
-    margin: 15px 0 5px
+    margin: 5px 0 -10px
+    color: #6b6b6b
+    font-family: 'Titillium Web', sans-serif
+    font-size: 40px
+
+h5 
+    color: #949494
+    font-family: 'Dancing Script', cursive
+    font-size: 16px
+    margin: 0 0 2px
 
 #container 
     margin: 0 auto
@@ -25,30 +34,56 @@ h1
     height: 5px
     background-color: transparent
 
+
+#color-site
+    width: 700px
+    height: 80px
+    display: flex
+    color: #6b6b6b
+    justify-content: space-between
+    align-items: center
+
 #color-container 
-    margin: 0 auto
-    width: 400px
+    width: 300px
     border: 1px solid #6b6b6b
     display: flex
-    margin-top: 5px
     border-radius: 2px
+
+#color-squares-container 
+    width: 300px
+    height: inherit
+    flex: 1
+
+#color-display-container
+    width: 300px
+    height: inherit
+    flex: 1
 
 @for $i from 1 through length($colors)
     $color:  nth($colors, $i)
     .colors-#{$i}
         background-color: #{$color}
-        height: 40px 
-        width: 40px
+        height: 30px 
+        width: 30px
+
+#display-color 
+    height: 30px 
+    width: 30px
+    border: 1px solid #6b6b6b
+    border-radius: 2px
+    flex: 1
 
 #clear
     border: none
     background-color: gray
     color: white
-    width: 70px
+    width: 80px
     height: 30px
     margin-top: 5px
     border-radius: 50px
+    font-size: 18px
 
 #clear:hover 
     background-color: #6b6b6b
     color: white
+
